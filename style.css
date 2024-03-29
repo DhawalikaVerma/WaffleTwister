@@ -107,7 +107,7 @@ html::-webkit-scrollbar-thumb{
     width: 100%;
     height: 100%;
     background: #f5f5f5;
-    box-shadow: 0 30px 50px #dbdbdb;
+    /* box-shadow: 0 30px 50px #dbdbdb; */
 }
 
 .container .slide .item{
@@ -117,12 +117,11 @@ html::-webkit-scrollbar-thumb{
     top: 50%;
     transform: translate(0, -50%);
     border-radius: 20px;
-    box-shadow: 0 30px 50px #505050;
+    /* box-shadow: 0 10px 30px #505050; */
     background-position: 50% 50%;
     background-size: cover;
     display: inline-block;
     transition: 0.5s;
-
 }
 
 .slide .item:nth-child(1),
@@ -186,26 +185,50 @@ html::-webkit-scrollbar-thumb{
 /* our story section begins */
 
 .ourStory{
-    margin: 20px; 
+    background-color: var(--main-color);
+    margin-top: 0%;
+    padding-top: 45%;
+    /* margin: 20px; */
+    /* border: 2px solid purple; */
+    border-radius: 10px;
 }
-
 .ourStory h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 26px;
-    font-weight: 500;
-    margin: 10px;
-    padding: 10px;
-    align-items: center;
+    font-size: 40px;
+    color: var(--primary-color);
+    text-align: center;
 }
 
 .content{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    color: var(--primary-color);
+    display: flex;
     margin: 50px;
     padding: 20px;
-    font-size: 12px;
-    justify-content: space-between;
-    white-space: 20px;
+    font-size: 18px;
+    justify-content: flex-start;
+    /* white-space: 20px; */
+    /* border: 2px solid red; */
+}
+.p1{
+    margin: 5px;
+    text-align: justify;
+    /* border: 2px solid#f9e30c; */
+}
+.p2{
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    /* border: 2px solid blue; */
+}
+.btn{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 20px;
+    width: 150px;
+    margin-left: 270px;
 }
 /* our story section ends */
 
@@ -219,7 +242,7 @@ html::-webkit-scrollbar-thumb{
     background-attachment: fixed;
 }
 .parallax-2{
-    background: url('images/wafflesection.jpg') no-repeat;
+    background: url('images/wafflesection2.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

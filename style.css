@@ -265,13 +265,27 @@ padding-bottom: 10%;
     background-position: center;
     background-attachment: fixed;
 }
+.parallax-3{
+    background: url('images/wafflesection.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 .parallax-inner{
     padding: 10% 0;
 }
 .himage1{
-    background-color: var(--main-color);
+    background: url("images/Belgium\ dark\ waffle.JPG");
+    padding: 200px;
 }
+
+
+.himage2{
+    background-color: var(--main-color); 
+    padding: 200px;
+}
+
 /* image parallax ends */
 
 /* our story section ends */
@@ -442,3 +456,11 @@ img{
 }
 
 
+
+
+/* Contact page */
+
+.contact{
+    padding: 300px;
+    background-color: #04305f;
+}

@@ -470,3 +470,15 @@ img{
     padding: 300px;
     background-color: #04305f;
 }
+
+
+
+
+
+/* Gallary css starts here */
+
+#gallery{
+    background: url(images/gbg.png);
+    padding: 500px;
+    margin: -100px;
+}

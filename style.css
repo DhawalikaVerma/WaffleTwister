@@ -406,7 +406,7 @@ img{
 
 .contact{
     padding: 50px;
-    background-color: #04305f;
+    background: url(images/BGcontact.png);
 }
 h2 {
     color: rgb(202, 155, 0);
@@ -419,7 +419,7 @@ form {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #13008d;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

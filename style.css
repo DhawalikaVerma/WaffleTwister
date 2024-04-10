@@ -402,6 +402,82 @@ img{
 
 
 
+/* Contact page */
+
+.contact{
+    padding: 50px;
+    background-color: #04305f;
+}
+h2 {
+    color: rgb(202, 155, 0);
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml,\<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="%23000000"><path fill-rule="evenodd" d="M10 14.914l-5.293-5.293a1 1 0 0 1 1.414-1.414L10 12.086l4.879-4.879a1 1 0 0 1 1.414 1.414L10 14.914z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+    background-size: 20px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: yellow;
+    color: navy;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #f7d000;
+}
 
 
 
@@ -459,16 +535,6 @@ img{
 .footer .credit span{
     color: var(--main-color);
 
-}
-
-
-
-
-/* Contact page */
-
-.contact{
-    padding: 300px;
-    background-color: #04305f;
 }
 
 

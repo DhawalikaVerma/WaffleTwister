@@ -114,14 +114,14 @@ html::-webkit-scrollbar-thumb{
 }
 
 .container .slide .item{
-    width: 200px;
-    height: 300px;
+    width: 180px;
+    height: 180px;
     position: absolute;
-    top: 50%;
+    top: 78%;
     transform: translate(0, -50%);
     border-radius: 20px;
     /* box-shadow: 0 10px 20px #505050; */
-    background-position: 50% 50%;
+    background-position: 60% 60%;
     background-size: cover;
     display: inline-block;
     transition: 0.5s;
@@ -176,7 +176,7 @@ html::-webkit-scrollbar-thumb{
     border: none;
     cursor: pointer;
     margin: 0 5px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     transition: 0.3s;
 }
 
@@ -276,10 +276,32 @@ padding-bottom: 10%;
     padding: 10% 0;
 }
 .himage1{
-    background: url("images/Belgium\ dark\ waffle.JPG");
+    background: url("images/background.png");
     padding: 200px;
+    min-height: 800px;
+    
 }
 
+.himage1 h1{
+    font-size: 5rem;
+    margin-top: -100px;
+    text-align: center;
+}
+
+.himage1 .Simg{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 80px;
+    margin-top: 30px;
+    width: 500px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+ 
+    
+}
+.Simg img{
+  border-radius: 50%;
+}
 
 .himage2{
     background-color: var(--main-color); 

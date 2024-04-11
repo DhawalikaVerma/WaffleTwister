@@ -409,6 +409,7 @@ img{
     background: url(images/BGcontact.png);
 }
 h2 {
+    font-size: 28px;
     color: rgb(202, 155, 0);
     /* align-items: center; */
     /* justify-content: center; */

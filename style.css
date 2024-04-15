@@ -426,15 +426,45 @@ img{
 
 /* Contact page */
 
-.contact{
-    padding: 50px;
-    background: url(images/BGcontact.png);
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.contact-form {
+    width: 45%; /* Adjust as needed */
+}
+
+.contact-info {
+    width: 40%; /* Adjust as needed */
+}
+
+.contact-image {
+    margin-top:95px ;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+   
+}
+
+.info {
+   
+    padding: 20px;
+    border-radius: 10px;
+}
+.info p{
+    font-size: 2rem;
 }
 h2 {
     font-size: 28px;
-    color: rgb(202, 155, 0);
-    /* align-items: center; */
-    /* justify-content: center; */
+    color: rgb(64, 51, 6);
+    align-items: center;
+    justify-content: center; 
     text-align: center;
 }
 
@@ -442,15 +472,18 @@ form {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #13008d;
+    background-color: var(--primary-color);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px rgba(15, 0, 73, 0.7);
+
 }
 
 label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    color: var(--white);
+    font-size: 1.5rem;
 }
 
 input[type="text"],
@@ -496,6 +529,7 @@ input[type="submit"] {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    width: 100%;
 }
 
 input[type="submit"]:hover {

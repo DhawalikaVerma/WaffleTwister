@@ -42,11 +42,11 @@
 
 
     <!-- Main content -->
-    <div class="contact">
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
 
-        <h2>Contact Us</h2>
-
-        <form id="contactForm" action="#" method="post" onsubmit="return validateForm()">
+             <form id="contactForm" action="script.js" method="post" onsubmit="return validateForm()">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
         
@@ -71,37 +71,23 @@
         
             <input type="submit" value="Submit">
         </form>
+
+        </div>
+
+        <div class="contact-info">
+            <img src="images/waffle.jpg" alt="Contact Image" class="contact-image">
+            <div class="info">
+                <p><strong>Phone:</strong> 123-456-7890</p>
+                <p><strong>Email:</strong> example@example.com</p>
+                <p><strong>Location:</strong> 123 Street, City, Country</p>
+            </div>
+        </div>
+
         
-        <script>
-            function validateForm() {
-                var name = document.getElementById("name").value;
-                var email = document.getElementById("email").value;
-                var phone = document.getElementById("phone").value;
-                var reason = document.getElementById("reason").value;
-                var message = document.getElementById("message").value;
+
         
-                if (name.trim() == "" || email.trim() == "" || phone.trim() == "" || reason.trim() == "" || message.trim() == "") {
-                    alert("All fields are required");
-                    return false;
-                }
         
-                // Email validation regex
-                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(email)) {
-                    alert("Invalid email address");
-                    return false;
-                }
         
-                // Phone number validation regex (simple check for numeric value and length)
-                var phoneRegex = /^\d{10}$/;
-                if (!phoneRegex.test(phone)) {
-                    alert("Invalid phone number. Please enter a 10-digit number");
-                    return false;
-                }
-        
-                return true;
-            }
-        </script>
 </div>
     
     

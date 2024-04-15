@@ -52,7 +52,6 @@ html::-webkit-scrollbar-thumb{
     }
 }
 
-
 .header{
     position: sticky;
     top:0; left: 0; right: 0;
@@ -278,7 +277,7 @@ padding-bottom: 10%;
 .himage1{
     background: url("images/background.png");
     padding: 200px;
-    min-height: 800px;
+    min-height: 600px;
     
 }
 
@@ -318,8 +317,88 @@ padding-bottom: 10%;
 
 /* our story section ends */
 
+/* our speciality section starts */
 
+.heading {
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
 
+.heading span {
+    margin-top: 0%;
+    font-size: 3.5rem;
+    color: var(--primary-color);
+}
+
+.heading h3 {
+    font-size: 4rem;
+    color: var(--black);
+}
+
+.food .slide {
+    margin-right: 20px; /* Add margin between slides */
+}
+
+.food .slides-container {
+    display: flex;
+    overflow: hidden;
+    width: calc(100% - 120px); /* Adjust based on button width and margin */
+    margin: 0 auto;
+}
+
+.food .pagination {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.food .pagination .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.food .pagination .dot.active {
+    background-color: gray;
+}
+.food .slide img {
+    max-width: 300px; /* Ensure the image fits within its container */
+    height: 300px; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    gap: 20px;
+}
+
+.food .slides-container {
+    display: flex;
+    overflow: hidden;
+    width: calc(100% - 120px); /* Adjust based on button width and margin */
+    margin: 0 auto;
+}
+
+.food .pagination {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.food .pagination .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.food .pagination .dot.active {
+    background-color: gray;
+}
+/* our speciality section starts */
 
 
 
@@ -409,9 +488,138 @@ img{
     opacity: 1;
     transform: translateY(-200px);
 }
+
+.hero{
+    background-image: url(images/background.png);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.hero h1{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+    color: black;
+}
+
+.slide-row{
+    display: flex;
+    width: 3200px;
+    transition: 0.4s;
+}
+
+.slide-col{
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+
+.user-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.user-img img{
+    height: 100%;
+    border-radius: 10px;
+}
+
+.user-text{
+    background: #2d3a59;
+    width: 520px;
+    height: 270px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: #d3d4d6;
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 2;
+  
+}
+
+.user-text p{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.user-text h3{
+    margin: 35px 0 5px;
+    color: #fff;
+}
+
+.aboutcontainer{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.indicator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50%;
+}
+.btn1{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    
+    border-radius: 15px;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+.active{
+    width: 45px;
+}
+
+.testimonial{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 /* about page css ends here */
 
+/* gallery section starts here */
 
+
+.gallery{
+    background-image: url(images/background.png);
+
+}
+.gallery .gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    
+}
+
+.gallery .gallery-container .box{
+    height: 4orem;
+    position: relative;
+    overflow: hidden;
+}
+.gallery .gallery-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* gallery section ends here */
 
 
 
@@ -563,10 +771,5 @@ input[type="submit"]:hover {
 
 
 
-/* Gallary css starts here */
 
-#gallery{
-    background: url(images/gbg.png);
-    padding: 500px;
-    margin: -100px;
-}
+

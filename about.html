@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- link to your custom css file -->
     <link rel="stylesheet" href="style.css">
+    
     <!-- swiper css link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -196,6 +197,26 @@
         </section>
 
         </div>
+<script>        
+var btn = document.getElementsByClassName("btn1");
+var slide = document.getElementById("slide");
+
+btn[0].onclick = function(){
+    slide.style.transform = "translateX(0px)";
+}
+
+btn[1].onclick = function(){
+    slide.style.transform = "translateX(-800px)";
+}
+
+btn[2].onclick = function(){
+    slide.style.transform = "translateX(-1600px)";
+}
+
+btn[3].onclick = function(){
+    slide.style.transform = "translateX(-2400px)";
+}
+</script>
     </section>
     <!-- About us  ends here -->
 

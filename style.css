@@ -594,6 +594,44 @@ img{
 
 /* about page css ends here */
 
+/* gallery  */
+
+/* Gallery Section Styles */
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.box {
+    flex-basis: calc(33.33% - 10px); /* Adjust the width to accommodate for the gap */
+    margin-bottom: 20px; /* Adjust the vertical gap */
+    position: relative;
+}
+
+.box img {
+    width: 100%;
+    display: block;
+    border-radius: 10px; /* Adjust the border-radius for rounded corners */
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.box:hover .icon {
+    opacity: 1;
+}
+
+/* You might want to adjust the styling for the icon and its positioning */
 
 
 
